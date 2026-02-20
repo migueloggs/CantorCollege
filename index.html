@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantor College | Inicial - Primaria - Secundaria</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="app.js" defer></script>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50 antialiased">
+
+    <nav class="bg-cantor-blue text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="rounded-full overflow-hidden flex-shrink-0">
+                        <img src="Logo.png" alt="Cantor College" class="block h-auto w-auto max-h-12 md:max-h-14 object-cover">
+                    </div>
+                    <div>
+                        <h1
+                            class="font-heading font-bold text-xl md:text-2xl tracking-wide leading-tight text-cantor-yellow">
+                            CANTOR COLLEGE</h1>
+                        <p class="text-[10px] md:text-xs tracking-widest uppercase font-semibold text-gray-200">Inicial
+                            • Primaria • Secundaria</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#nosotros"
+                        class="hover:text-cantor-yellow font-medium transition duration-300">Nosotros</a>
+                    <a href="#niveles" class="hover:text-cantor-yellow font-medium transition duration-300">Niveles</a>
+                    <a href="#calendario"
+                        class="hover:text-cantor-yellow font-medium transition duration-300">Calendario Académico</a>
+                    <a href="#contacto"
+                        class="bg-cantor-yellow text-cantor-blue px-5 py-2 rounded-full font-bold hover:bg-white transition duration-300 shadow-md">Contáctanos</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-cantor-yellow hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-cantor-blue border-t border-blue-800 pb-4">
+            <a href="#nosotros"
+                class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-cantor-yellow">Nosotros</a>
+            <a href="#niveles" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-cantor-yellow">Niveles</a>
+            <a href="#calendario"
+                class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-cantor-yellow">Calendario Académico</a>
+            <a href="#contacto" class="block px-4 py-3 text-cantor-yellow font-bold hover:bg-blue-800">Contáctanos</a>
+        </div>
+    </nav>
+
+    <header class="hero-bg h-screen md:h-[80vh] flex items-center">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left flex flex-col md:flex-row items-center">
+            <div class="md:w-3/5 text-white">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-cantor-yellow text-cantor-blue font-bold text-sm mb-4 uppercase tracking-wider">Admisión
+                    2026 Abierta</span>
+                <h2 class="font-heading text-4xl md:text-6xl font-bold mb-6 leading-tight whitespace-nowrap">Educación que trasciende</h2>
+                <p class="text-lg md:text-xl mb-8 font-light text-gray-200">En CANTOR COLLEGE, buscamos educar mediante
+                    una formación de alto nivel académico que potencia las capacidades, la creatividad y la innovación
+                    de nuestros estudiantes para afrontar los retos de un mundo competitivo.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contacto"
+                        class="bg-cantor-yellow text-cantor-blue px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:scale-105 transition-all shadow-lg text-center">Únete
+                        a nuestra familia</a>
+                    <a href="#propuesta"
+                        class="border-2 border-white text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-cantor-blue transition-all text-center">Nuestra
+                        Propuesta</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="propuesta" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="font-heading text-3xl md:text-4xl font-bold text-cantor-blue mb-4">Nuestra Propuesta Educativa
+                </h3>
+                <div class="w-24 h-1 bg-cantor-yellow mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Garantizamos un entorno óptimo para el aprendizaje,
+                    donde la disciplina, la ética y el acompañamiento constante son nuestros pilares.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-gray-50 p-8 rounded-2xl text-center card-hover border-b-4 border-cantor-blue">
+                    <div
+                        class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-cantor-blue text-3xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl mb-3 text-cantor-blue">Entorno 100% Seguro</h4>
+                    <p class="text-gray-600">Mantenemos una política de <strong>Tolerancia Cero</strong> al bullying.
+                        Nuestro personal garantiza supervisión activa en aulas y durante todos los tiempos de
+                        esparcimiento.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center card-hover border-b-4 border-cantor-yellow">
+                    <div
+                        class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6 text-cantor-yellow text-3xl">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl mb-3 text-cantor-blue">Docentes Dedicados</h4>
+                    <p class="text-gray-600">En Cantor College, nuestros profesores están dedicados exclusivamente al
+                        aprendizaje y atención de tu hijo durante la jornada educativa.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center card-hover border-b-4 border-cantor-blue">
+                    <div
+                        class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-cantor-blue text-3xl">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl mb-3 text-cantor-blue">Acompañamiento Académico</h4>
+                    <p class="text-gray-600">Realizamos revisiones diarias de cuadernos, monitoreo conductual y
+                        mantenemos comunicación fluida mediante la agenda virtual con nuestro departamento de Psicología para el bienestar
+                        integral.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="niveles" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="font-heading text-3xl md:text-4xl font-bold text-cantor-blue mb-4">Niveles Educativos</h3>
+                <div class="w-24 h-1 bg-cantor-yellow mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Formación continua desde los primeros pasos hasta la
+                    preparación para el éxito universitario.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Alumnos de nivel inicial" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-heading font-bold text-2xl text-cantor-blue mb-2">Nivel Inicial</h4>
+                        <div
+                            class="flex items-center gap-2 text-sm text-cantor-blue bg-blue-50 py-1 px-3 rounded-md mb-4 w-fit font-semibold">
+                            <i class="far fa-clock"></i> 8:00 a.m. - 1:00 p.m.
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">Desarrollo de habilidades motrices, grafismos y valores
+                            tempranos en un ambiente lúdico y altamente protegido. Entrega personalizada de los pequeños
+                            al apoderado.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Alumnos de primaria en clase" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-heading font-bold text-2xl text-cantor-blue mb-2">Nivel Primaria</h4>
+                        <div
+                            class="flex items-center gap-2 text-sm text-cantor-blue bg-blue-50 py-1 px-3 rounded-md mb-4 w-fit font-semibold">
+                            <i class="far fa-clock"></i> 7:30 a.m. - 2:00 p.m.
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">Consolidación del aprendizaje, fomento de la caligrafía,
+                            orden y método de estudio. Incluimos talleres especializados de arte y deporte supervisados.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Estudiantes de secundaria graduándose" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-heading font-bold text-2xl text-cantor-blue mb-2">Nivel Secundaria</h4>
+                        <div
+                            class="flex items-center gap-2 text-sm text-cantor-blue bg-blue-50 py-1 px-3 rounded-md mb-4 w-fit font-semibold">
+                            <i class="far fa-clock"></i> 7:30 a.m. - 2:30 p.m.
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">Preparación académica rigurosa, desarrollo del pensamiento
+                            crítico y orientación vocacional, manteniendo una estricta disciplina y respeto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calendario" class="py-20 bg-cantor-blue text-white relative">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        </div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h3 class="font-heading text-3xl md:text-4xl font-bold text-cantor-yellow mb-4">Calendario de
+                    Evaluaciones 2026</h3>
+                <p class="text-gray-300 max-w-2xl mx-auto text-lg">La planificación es clave para el éxito. Conoce las
+                    fechas de evaluación de nuestros estudiantes.</p>
+            </div>
+
+            <div class="bg-white text-gray-800 rounded-2xl shadow-2xl overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100 border-b-2 border-cantor-yellow text-cantor-blue font-heading">
+                                <th class="p-4 font-bold uppercase text-sm">Bimestre</th>
+                                <th class="p-4 font-bold uppercase text-sm">Examen de Unidad</th>
+                                <th class="p-4 font-bold uppercase text-sm">Examen Bimestral</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm md:text-base">
+                            <tr class="border-b hover:bg-gray-50 transition">
+                                <td class="p-4 font-bold text-cantor-blue">1er Bimestre</td>
+                                <td class="p-4"><i class="far fa-calendar-alt text-cantor-yellow mr-2"></i> 01 de Abril
+                                </td>
+                                <td class="p-4 font-medium"><i class="fas fa-flag-checkered text-green-500 mr-2"></i> 06
+                                    de Mayo</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50 transition bg-gray-50/50">
+                                <td class="p-4 font-bold text-cantor-blue">2do Bimestre</td>
+                                <td class="p-4"><i class="far fa-calendar-alt text-cantor-yellow mr-2"></i> 17 de Junio
+                                </td>
+                                <td class="p-4 font-medium"><i class="fas fa-flag-checkered text-green-500 mr-2"></i> 15
+                                    de Julio</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50 transition">
+                                <td class="p-4 font-bold text-cantor-blue">3er Bimestre</td>
+                                <td class="p-4"><i class="far fa-calendar-alt text-cantor-yellow mr-2"></i> 26 de Agosto
+                                </td>
+                                <td class="p-4 font-medium"><i class="fas fa-flag-checkered text-green-500 mr-2"></i> 30
+                                    de Setiembre</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition bg-gray-50/50">
+                                <td class="p-4 font-bold text-cantor-blue">4to Bimestre</td>
+                                <td class="p-4"><i class="far fa-calendar-alt text-cantor-yellow mr-2"></i> 11 de
+                                    Noviembre</td>
+                                <td class="p-4 font-medium"><i class="fas fa-flag-checkered text-green-500 mr-2"></i> 10
+                                    de Diciembre</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bg-blue-50 p-4 text-xs md:text-sm text-cantor-blue border-t border-gray-200">
+                    <i class="fas fa-info-circle text-cantor-yellow mr-2"></i> <strong>Nota para padres:</strong> Los
+                    exámenes son devueltos corregidos el mismo día para asegurar el seguimiento constante del avance de
+                    sus hijos.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-cantor-yellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-2/3 mb-6 md:mb-0">
+                <h3 class="font-heading text-2xl font-bold text-cantor-blue mb-2">Identidad y Presentación</h3>
+                <p class="text-cantor-blue font-medium">Fomentamos el orden y la igualdad a través del uso correcto de
+                    nuestro uniforme (buzo institucional, jean azul clásico y polo del colegio). Cuidamos el aseo y la
+                    buena presentación todos los días.</p>
+            </div>
+            <div class="md:w-1/3 text-center md:text-right">
+                <i class="fas fa-tshirt text-6xl text-cantor-blue opacity-50"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-gray-900 text-gray-300 pt-16 pb-8 border-t-4 border-cantor-yellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="rounded-full overflow-hidden flex-shrink-0">
+                            <img src="Logo.png" alt="Cantor College" class="block h-auto w-auto max-h-10 md:max-h-12 object-cover">
+                        </div>
+                        <h4 class="font-heading font-bold text-xl text-white tracking-wide">CANTOR COLLEGE</h4>
+                    </div>
+                    <p class="mb-4 text-sm">Institución Educativa comprometida con la formación integral en valores,
+                        disciplina y excelencia académica para el futuro de nuestra sociedad.</p>
+                    <p class="text-sm font-semibold text-cantor-yellow">Comas, Lima - Perú</p>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-lg text-white mb-6 uppercase tracking-wider">Atención
+                        Administrativa</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="far fa-clock mt-1 text-cantor-yellow"></i>
+                            <span>Lunes a Viernes<br>7:15 a.m. - 4:00 p.m.</span>
+                        </li>
+                        <li class="flex items-start gap-3 mt-4">
+                            <i class="fas fa-phone-alt mt-1 text-cantor-yellow"></i>
+                            <span>Central: 934 403 290<br>Alterno: 981 464 799</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-lg text-white mb-6 uppercase tracking-wider">Dirección
+                        Académica</h4>
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                        <div class="mb-3">
+                            <p class="font-bold text-white text-sm">Nuevo Director</p>
+                            <p class="text-xs text-cantor-yellow">Director Académico</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white text-sm">Karen Blancas Sanchez</p>
+                            <p class="text-xs text-cantor-yellow">Coordinadora Académica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 Cantor College. Todos los derechos reservados.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://facebook.com/tu_pagina" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition" title="Facebook">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="https://instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition" title="Instagram">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@tu_usuario" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition" title="TikTok">
+                        <i class="fab fa-tiktok text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+/* Estilos personalizados para animaciones suaves */
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-bg {
+    background-image: linear-gradient(rgba(15, 32, 75, 0.85), rgba(15, 32, 75, 0.7)), url('Fachada.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
