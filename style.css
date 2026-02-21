@@ -3,6 +3,17 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'Bookmania';
+    src: url('fonts/bookmania-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bookmania-title {
+    font-family: 'Bookmania', serif !important;
+}
+
 .hero-bg {
     background-image: linear-gradient(rgba(15, 32, 75, 0.85), rgba(15, 32, 75, 0.7)), url('Fachada.png');
     background-size: cover;
@@ -17,4 +28,14 @@ html {
 .card-hover:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+@font-face {
+    font-family: 'Cookie';
+    src: url('fonts/Cookie-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cookie-title {
+    font-family: 'Cookie', cursive !important;
 }
